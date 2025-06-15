@@ -62,7 +62,7 @@ def extract_transcript_details(youtube_video_url):
 ## getting the summary based on Prompt from Google Gemini Pro
 def generate_gemini_content(transcript_text,prompt):
 
-    model=genai.GenerativeModel("gemini-pro")
+    model=genai.GenerativeModel("gemini-pro") #Select model accordingly
     response=model.generate_content(prompt+transcript_text)
     return response.text
 
