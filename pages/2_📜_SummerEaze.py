@@ -6,7 +6,7 @@ import os
 import google.generativeai as genai
 
 from youtube_transcript_api import YouTubeTranscriptApi
-
+ 
 genai.configure(api_key=os.getenv("GOOGLE_API_KE")) #Create a .env file and store the key there 
 st.set_page_config(page_icon="pages/favicon.png")
 st.title(":scroll: Summereaze") 
